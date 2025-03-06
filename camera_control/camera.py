@@ -5,7 +5,7 @@ import asyncio
 import websockets
 import os
 import base64
-import picamera2 as Picamera2
+from picamera2 import Picamera2
 
 class OpenCVWebSocket:
     def __init__(self, server_url):
