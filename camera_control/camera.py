@@ -26,7 +26,7 @@ class OpenCVWebSocket:
 
     def detect_objects(self, frame):
         height, width = frame.shape[:2]
-        blob = cv2.dnn.blobFromImage(frame, 1/255.0, (160, 160), swapRB=True, crop=False)
+        blob = cv2.dnn.blobFromImage(frame, 1/255.0, (416, 416), swapRB=True, crop=False)
         self.net.setInput(blob)
 
         layer_names = self.net.getUnconnectedOutLayersNames()
