@@ -65,7 +65,7 @@ class OpenCVWebSocket:
                 image = base64.b64encode(buffer).decode("utf-8")
 
                 await websocket.send(image)
-                await asyncio.sleep(0.2)
+                await asyncio.sleep(0.7)
 
     def start(self):
         asyncio.run(self.send_video())
