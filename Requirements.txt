@@ -4,3 +4,5 @@ numpy
 flask-socketio
 eventlet
 picamera2
+socketio
+serial
